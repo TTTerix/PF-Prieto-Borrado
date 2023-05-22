@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+}
+
+.left {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background-image: $colorg;
+    padding: 20px;
+    font-size: 30px;
+    color: $colorw;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px $colorb;
+    border: 2px solid $colorb;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.right-top {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.right-bottom {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.right-top img,
+.right-bottom img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-out;
+    margin: 60px;
+    border: 2px solid $colorb;
+}
+
+.right-top img:hover,
+.right-bottom img:hover {
+    transform: scale(1.1);
+}
+
+.right-top,
+.right-bottom {
+    padding: 10px;
+}

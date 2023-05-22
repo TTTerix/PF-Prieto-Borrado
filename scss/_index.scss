@@ -1,0 +1,32 @@
+section {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    border: 2px solid $colorb;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.textoa {
+    border: 2px solid $colorb;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    color: $colorw;
+    text-shadow: 0 0 10px $colorb;
+    padding: 20px;
+    background-image: $colorg;
+    background-color: $colorp;
+}

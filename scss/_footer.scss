@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    font-size: 30px;
+    background-image: $colorg;
+    background-color: $colorp;
+    color: $colorw;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px $colorb;
+    border: 2px solid $colorb;
+    font-family: "Times New Roman", Times, serif;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: $colorw;
+    font-size: 50px;
+}
